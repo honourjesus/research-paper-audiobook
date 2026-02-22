@@ -1,0 +1,25 @@
+pdf_processor:
+  max_pages: 100
+  extract_images: false
+
+equation_handler:
+  verbalize: true
+  fallback_to_text: true
+
+table_handler:
+  max_rows: 50
+  summarize: true
+
+tts_engine:
+  use_neural_tts: false
+  language: en
+  slow: false
+
+evaluation:
+  enabled: true
+  metrics:
+    - rouge
+    - bleu
+
+output:
+  dir: outputs
